@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 25px 0 35px 0;
+}
+
+.hero {
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-bakgrunn.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+#buttons {
+    padding: 15px 32px;
+    border: none;
+    color: rgb(35, 68, 255);
+    font-size: 16px;
+    border-radius: 33px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}         
+
+#registrerOppdrag {
+
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#navn, #dato, #epost, #telefon, #oppdrag, #fil, #oppdragsbeskrivelse {
+    padding: 1%;
+    border-collapse: separate; 
+    border-spacing: 4px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#epost {
+    margin-left: 5px;
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#liste {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.tittel {
+    text-align: left;
+    margin-left: 40px;
+    color: #fff;
+
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.hero-button1 {
+    padding: 15px 32px;
+    border: none;
+    color: rgb(35, 68, 255);
+    font-size: 16px;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+.hero-button2 {
+    padding: 15px 32px;
+    border: none;
+    background-color: rgb(35, 68, 255);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+#registrere {
+    padding: 15px 32px;
+    background-color: blue;
+    color: white;
+    border: 1px solid #ced4da;
+    border-radius: 22px;
+    font-size: 16px;
+    
+}
+
+#field {
+    border: 7px solid #172b30;
+}
+
+#slettSiste:hover, #registrere:hover, #vis:hover {
+    cursor: pointer;
+    background-color: rgb(77, 103, 255);
+    transition: all 0.2s ease;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tittel {
+    font-size: 24px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1rem;
+	}
+	
+	main article {
+	display: grid;
+	grid-auto-flow: row;
+	background-color: #fff;
+    cursor: pointer;
+    box-shadow: 5px 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 50px;
+    border-radius: 55px;
+	}
+	
+	main img {
+    width: 100%;
+    border-radius: 5px;
+	}
+	
+	main article p {
+	padding: 1rem;
+	text-align: center;
+	justify-self: center;
+	align-self: end; 
+    }
+    
+        

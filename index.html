@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrere oppdrag til database</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body id="body">
+    <header>
+    <h1 class="tittel">Registrer oppdrag</h1>
+    </header>
+    <div class="hero">
+        <div class="hero-text">
+        <h1>Registrer ditt IT oppdrag hos oss!</h1>
+        <p>Vi hjelper hundrevis av nordmenn i uken med sine IT-relaterte problemer.</p>
+        <p>Få hjelp du også<b> i dag!</b></p>
+        <div class="hero-buttons">
+            <button class="hero-button1"><a href="#registrerOppdrag">Registrer oppdrag</a></button>
+            <button class="hero-button2"><a href="#main">Se alle oppdrag</a></button>
+        </div>
+        </div>
+    </div>
+
+            <form id="registrerOppdrag">
+                <input type="date" id="dato" required>
+                    <div id="flex-container">
+                <input type="text" id="navn" placeholder="Navn" required>
+                <input type="email" id="epost" placeholder="E-mail" required>
+                    </div>
+                <input type="tel" id="telefon" placeholder="Tlf">
+                <textarea id="oppdragsbeskrivelse" placeholder="Oppdragsbeskrivelse" rows="4" cols="50"></textarea>
+                <input type="file" id="fil">
+
+                <div id="buttons" class="buttons">
+                    <button type="submit" id="registrere">Registrer oppdrag</button>
+                </div>
+            </form>
+   
+    
+    <main id="main"></main>
+
+    <div id="overlay"></div>
+    </div>
+    
+    <!-- Firebase script -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
+    <script>    
+        // Min Firebase konfigurasjon
+        const firebaseConfig = {
+            apiKey: "AIzaSyBFzPLr0FRkGOTu7eytzZ_BocAt_nN6TDo",
+            authDomain: "registrereitoppdrag.firebaseapp.com",
+            databaseURL: "https://registrereitoppdrag-default-rtdb.firebaseio.com",
+            projectId: "registrereitoppdrag",
+            storageBucket: "registrereitoppdrag.appspot.com",
+            messagingSenderId: "1002468748494",
+            appId: "1:1002468748494:web:cf330aa2e6f35481d3749f"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMYjoOsjVMTPcyBJvty8vOE%2FIToppdrag" allowfullscreen></iframe>
+    <script src="./index.js"></script>
+</body>
+</html>
